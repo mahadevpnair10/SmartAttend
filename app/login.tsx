@@ -16,7 +16,7 @@ export default function Login() {
     }
 
     try {
-      const userDocRef = doc(db, 'users', rollNumber);
+      const userDocRef = doc(db, 'user', rollNumber);
       const userDocSnap = await getDoc(userDocRef);
 
       if (userDocSnap.exists()) {
